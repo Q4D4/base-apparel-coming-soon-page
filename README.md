@@ -1,3 +1,3 @@
 # Base Apparel coming soon page
 
-Simple webpage using HTML, CSS, and JavaScript
+Simple webpage using HTML, CSS (OOCSS + BEM), and JavaScript
