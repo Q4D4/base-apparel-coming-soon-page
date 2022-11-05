@@ -5,34 +5,63 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<meta name="author" content="David Kadaria" />
+		<meta name="theme-color" content="#ce9797" />
 		<link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png" />
-
-		<link rel="stylesheet" href="/css/style.css" />
-
 		<title>Base Apparel coming soon page</title>
+		<!-- Stylesheets -->
+		<link rel="stylesheet" href="/css/theme.css" />
+		<link rel="stylesheet" href="/css/style.css" />
 	</head>
 	<body>
-		<div class="hero">
-			<!-- Image -->
+		<div class="wrapper">
+			<div class="hero">
+				<picture>
+					<source media="(max-width: 767px)" srcset="/images/hero-mobile.jpg" />
+					<source media="(min-width: 768px)" srcset="/images/hero-desktop.jpg" />
+					<img class="hero__image" src="/images/hero-desktop.jpg" alt="Smiling girl" />
+				</picture>
+			</div>
+			<div class="content">
+				<header class="content__header">
+					<img
+						class="content__header-logo"
+						src="/images/logo.svg"
+						alt="Logo: Base Apparel"
+					/>
+				</header>
+				<main class="content__main">
+					<h1 class="content__main-heading">
+						<span>We're</span>
+						<p>coming</p>
+						<p>soon</p>
+					</h1>
+					<p class="content__main-description">
+						Hello fellow shoppers! We're currently building our new fashion store. Add
+						your email below to stay up-to-date with announcements and our launch deals.
+					</p>
+					<form class="form" novalidate>
+						<div class="form__items">
+							<input
+								class="form__input"
+								type="email"
+								name="email"
+								placeholder="Email Address"
+							/>
+							<img
+								class="form__error-image"
+								src="/images/icon-error.svg"
+								alt="exclamation mark"
+							/>
+							<button class="form__button" type="submit">
+								<img src="/images/icon-arrow.svg" alt="Arrow (to right)" />
+							</button>
+						</div>
+						<div class="form__error-message">Please provide a valid email</div>
+					</form>
+				</main>
+			</div>
 		</div>
-		<div class="content">
-			<header class="content__header"></header>
-			<main class="content__main"></main>
-		</div>
-
-		We're coming soon Hello fellow shoppers! We're currently building our new fashion
-		store. Add your email below to stay up-to-date with announcements and our launch
-		deals. Email Address
-
+		<!-- JavaScript -->
 		<script src="/js/main.js"></script>
-
-		<!-- <footer>
-			<p class="attribution">
-				Challenge by
-				<a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-					>Frontend Mentor</a
-				>. Coded by <a href="#">Your Name Here</a>.
-			</p>
-		</footer> -->
 	</body>
 </html>
